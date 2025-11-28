@@ -85,14 +85,14 @@ export default function WishModal({ isOpen, onClose, children }: WishModalProps)
                                 className="relative bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-red-500 bg-[length:200%_auto] rounded-3xl p-1 shadow-2xl"
                             >
                                 {/* Modal Content Container */}
-                                <div className="bg-white dark:bg-gray-900 rounded-[calc(1.5rem-4px)] relative overflow-hidden">
+                                <div className="bg-[var(--background)] rounded-[calc(1.5rem-4px)] relative overflow-hidden">
                                     {/* Background Gradient */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-green-500/5 to-blue-500/5" />
 
                                     {/* Close Button */}
                                     <button
                                         onClick={onClose}
-                                        className="absolute top-4 right-4 z-20 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-red-500 hover:text-white transition-all duration-300 hover:scale-110"
+                                        className="absolute top-4 right-4 z-20 p-2 rounded-full bg-[var(--background)] text-[var(--foreground)] hover:bg-red-500 hover:text-white transition-all duration-300 hover:scale-110 border border-[var(--border)]"
                                         aria-label="Close modal"
                                     >
                                         <X size={24} />

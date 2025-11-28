@@ -152,8 +152,8 @@ export default function WishForm({ onSuccess }: WishFormProps) {
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         className={`p-4 rounded-xl text-center font-medium ${status.type === "success"
-                                ? "bg-green-50 text-green-800 border-2 border-green-200 dark:bg-green-900/20 dark:text-green-100 dark:border-green-800"
-                                : "bg-red-50 text-red-800 border-2 border-red-200 dark:bg-red-900/20 dark:text-red-100 dark:border-red-800"
+                            ? "bg-green-50 text-green-800 border-2 border-green-200 dark:bg-green-900/20 dark:text-green-100 dark:border-green-800"
+                            : "bg-red-50 text-red-800 border-2 border-red-200 dark:bg-red-900/20 dark:text-red-100 dark:border-red-800"
                             }`}
                     >
                         {status.message}
@@ -167,8 +167,8 @@ export default function WishForm({ onSuccess }: WishFormProps) {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     className={`w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 to-pink-600 text-white font-bold text-xl rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 ${isSubmitting || !formData.name || !formData.message
-                            ? "opacity-50 cursor-not-allowed"
-                            : "hover:from-red-700 hover:to-pink-700"
+                        ? "opacity-50 cursor-not-allowed"
+                        : "hover:from-red-700 hover:to-pink-700"
                         }`}
                 >
                     {isSubmitting ? (
